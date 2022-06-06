@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="card text-center mt-5">
+      <div class="card-body bg-primary text-white">
+        <h5 class="card-title">App de Gastos</h5>
+        <p class="card-text">Ingresa cuanto pago cada persona</p>
+      </div>
+    </div>
+    <form class="mt-5">
+      <div class="mb-3">
+        <label for="exampleInputName" class="form-label">Nombre</label>
+        <input type="text" class="form-control" id="nombre">
+      </div>
+      <div class="mb-3">
+        <label for="exampleInpuNumer" class="form-label">Dinero</label>
+        <input type="number" class="form-control" id="dinero">
+      </div>
+      <input type="button" class="btn btn-success" value="Enviar" onclick="agregarPersona();">
+    </form>
+    <table class="table table-bordered mt-4" id="tabla">
+      <thead>
+        <tr>
+          <th scope="col">Nombre</th>
+          <th scope="col">Dinero</th>
+        </tr>
+      </thead>
+      <tbody>
+      </tbody>
+    </table>
+    <h5 class="mt2" id="total">
+    </h5>
+    <h5 class="mt2" id="parcial">
+    </h5>
+    
+  </div>
+
+  <script src="main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
